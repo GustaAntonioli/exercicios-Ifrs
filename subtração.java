@@ -4,7 +4,7 @@ import java.util.Scanner;
       calcule e mostre a subtração 
       do primeiro número pelo segundo. */
 
-public class subtracao {
+public class subtração {
     
     public static void main(String[] args){ 
         try (Scanner scan = new Scanner(System.in)){
