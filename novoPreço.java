@@ -13,7 +13,13 @@ public class novoPreço {
             float banana = (float) 5.99;
             float desconto = banana - ((banana / 100)*10);
 
-            System.out.printf("O preço com desconto é: %.2f", desconto);
-        }
+            System.out.printf("O preço com desconto é: %.2f", desconto);  
+        }                                                                 
     }
 }
+
+/* use printf e %.2f para que o valor tenha apenas duas casas decimais. 
+com float deve trocar o + (concatenar) por uma vírgula, como acima, caso contrário haverá um erro,
+o java alerta que: você está tentando formatar uma saída de ponto flutuante como uma string,
+mas a string não contém a especificação de formato correta para o número flutuante.
+*/
