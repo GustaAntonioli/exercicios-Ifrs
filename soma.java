@@ -11,17 +11,16 @@ public class soma {
 
             int a ;
             int b ;
-            int resultado = (a-b);
-                
+                           
                                 
                     System.out.print("Digite o primeiro número: ");
-                    scan.nextInt();
+                    a = scan.nextInt();
               
                     System.out.print("Digite o segundo número: ");
-                    scan.nextInt();
+                    b = scan.nextInt();
               
-                    resultado = a - b;
-                    System.out.println("Resultado da subtração: " + resultado);
+                    int c = a - b;
+                    System.out.println("Resultado da subtração: " + c);
                 }
                 
         }
