@@ -37,7 +37,7 @@
     Por exemplo, se as notas forem 10, 5 e 6, e os pesos 1, 2 e 3, a média final do estudante seria 10 x 1 + 5 x 2+ 3 x 6, que resulta em 10 + 10 + 18 = 38. 
     Esse valor deve ser dividido pela soma dos pesos (6), resultando em 6,3.*/
      
-# 8.ÁREA TRIÂMGULO
+# 8.ÁREA TRIÂNGULO
 
     /*Faça um programa que calcule e mostre a área de um triângulo. Sabe-se que: 
     Área = (base x altura) / 2. A base e altura devem ser informadas pelo usuário.*/
