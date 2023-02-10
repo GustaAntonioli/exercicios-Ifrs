@@ -24,7 +24,7 @@ public class areaQuadrado{
 
             
                         float a = (l*l);
-                            System.out.println("\nA área do triângulo é: " + a);
+                            System.out.println("\nA área do Quadrado é: " + a);
         }
     }
 }
