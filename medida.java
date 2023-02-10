@@ -11,26 +11,23 @@ public class medida {
         try (Scanner scan = new Scanner(System.in)){
 
             double cm = 0, m = 0, yd = 0, in = 0, ft = 0;
-            double mi = 0.000;
+            double mi = 0.0;
 
             System.out.print("\n-A calculadora utiliza a medida em metro como padrão.\n");
             System.out.print("\n-Digite um número para conversão: \n");
 
-            m = scan.nextInt();
-            ft = (m*3.2808);
-            System.out.print("\n-O valor em pé(ft) é: " + ft + "\n");
-
-            m = scan.nextInt();
-            yd = (m*1.0936);
-            System.out.print("\n-O valor em Jardas(yd) é: " + yd + "\n");
-
-            m = scan.nextInt();
-            in = (m*39.37);
-            System.out.print("\n-O valor em Polegadas(in) é: " + in + "\n");
-
             m = scan.nextDouble();
-            mi = Math.round (m*0.00062137);
-            System.out.print("\n-O valor em Milhas(mi) é: " + mi + "\n");
+            ft = (m*3.2808);
+            yd = (m*1.0936);
+            in = (m*39.37);
+            mi = (m*0.00062137);
+            cm = (m*100);
+
+            System.out.print("-O valor em centímetros(cm) é: " + cm + "\n");
+            System.out.print("-O valor em pé(ft) é: " + ft + "\n");
+            System.out.print("-O valor em Jardas(yd) é: " + yd + "\n");
+            System.out.print("-O valor em Polegadas(in) é: " + in + "\n");
+            System.out.printf("-O valor em Milhas(mi) é: %.7f\n", mi);
         }
     }
 }
