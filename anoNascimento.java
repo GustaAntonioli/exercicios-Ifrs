@@ -1,21 +1,21 @@
-import java.time.LocalDate;
-import java.time.Period;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
-import java.util.Scanner;
 
-/*Faça um programa que receba o ano de nascimento de uma pessoa 
-e o ano atual, calcule e mostre: 
+    import java.time.LocalDate;
+    import java.time.Period;
+    import java.time.format.DateTimeFormatter;
+    import java.time.format.DateTimeParseException;
+    import java.time.temporal.ChronoUnit;
+    import java.util.Scanner;
+
+    /*Faça um programa que receba o ano de nascimento de uma pessoa 
+    e o ano atual, calcule e mostre: 
     a. a idade dessa pessoa em anos; 
     b. a idade dessa pessoa em meses; 
     c. a idade dessa pessoa em dias (considerando que cada ano possui 365 dias); 
     d. a idade dessa pessoa em semanas (cada ano possui 52 semanas). */
-
     
     public class anoNascimento {
         public static void main(String[] args) {
             try (Scanner scan = new Scanner(System.in)) {
-    
                 String dataNascimento;
                 LocalDate dtNascimento = null;
     
@@ -38,6 +38,10 @@ e o ano atual, calcule e mostre:
     
                 System.out.println("Você tem: " + periodo.getYears() + " anos, "
                         + periodo.getMonths() + " meses e " + periodo.getDays() + " dias.");
+    
+                // Calcula a diferença em semanas
+                long semanas = ChronoUnit.WEEKS.between(dtNascimento, dataAtual);
+                System.out.println("Quantidade de semanas: " + semanas);
             }
         }
     }
